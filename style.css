@@ -1,0 +1,143 @@
+body {
+transition: color 0.3s;
+}
+
+
+nav ul li a:hover {
+color: #ffdd00;
+}
+h1 {
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+
+
+main {
+max-width: 1000px;
+margin: 2rem auto;
+padding: 1rem;
+}
+
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card {  
+background: white;
+margin-bottom: 2rem;
+padding: 1.5rem;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+h2 {
+color: #0077b6;
+border-bottom: 2px solid #0077b6;
+padding-bottom: 0.5rem;
+}
+
+
+img.perfil {
+width: 150px;
+border-radius: 50%;
+display: block;
+margin: 1rem auto;
+border: 3px solid #0077b6;
+}
+
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 1rem;
+margin-top: 1rem;
+}
+
+
+.box {
+background: #e6f2ff;
+border: 2px solid #0077b6;
+padding: 1rem;
+border-radius: 8px;
+text-align: center;
+font-weight: bold;
+transition: transform 0.3s, background 0.3s;
+}
+
+
+.box:hover {
+transform: scale(1.05);
+background: #caf0f8;
+}
+
+
+footer {
+text-align: center;
+padding: 1rem;
+background: #0077b6;
+color: white;
+margin-top: 2rem;
+}
+
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+nav ul {
+flex-direction: column;
+}
+img.perfil {
+width: 100px;
+}
+}
+nav {
+  position: sticky;
+  top: 0;
+  background: #023e8a;
+  z-index: 100;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #ffdd00;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(to right, #f0f2f5, #e6f2ff);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: color 0.3s;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #023e8a;
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
